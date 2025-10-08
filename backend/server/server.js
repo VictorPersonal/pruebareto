@@ -82,7 +82,8 @@ app.delete("/vehiculos/:id", async (req, res) => {
 // =====================
 // INICIAR SERVIDOR
 // =====================
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
+
 app.listen(PORT, () => {
-  console.log(`🚀 Servidor backend ejecutándose en el puerto ${PORT}`);
+  console.log(`🚀 Servidor backend ejecutándose en: http://localhost:${PORT}/`);
 });
